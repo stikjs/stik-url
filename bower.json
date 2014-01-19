@@ -1,0 +1,26 @@
+{
+  "name": "stik-url-state.js",
+  "main": "url_state.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/stikjs/stik-url-state",
+  "authors": [
+    "Lukas Alexandre <lukas@codelogic.me>"
+  ],
+  "description": "Adds url related functionalities to Stik.js",
+  "keywords": [
+    "url",
+    "restful",
+    "testability",
+    "dependency-injection"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "specs",
+    "src",
+    "examples",
+    "Gruntfile.js"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "stik-url-state.js",
+  "version": "0.1.0",
+  "description": "Adds url related functionalities to Stik.js",
+  "main": "stik_url_state.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stikjs/stik-url-state.git"
+  },
+  "keywords": [
+    "url",
+    "restful",
+    "testability",
+    "dependency-injection"
+  ],
+  "author": "Lukas Alexandre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stikjs/stik-url-state/issues"
+  },
+  "homepage": "https://github.com/stikjs/stik-url-state",
+  "dependencies": {
+    "stik.js": "~0.7"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-jasmine": "~0.5.2"
+  }
+}
