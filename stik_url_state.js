@@ -1,5 +1,5 @@
 (function(){
-  UrlState = {};
+  var UrlState = {};
 
   UrlState.$baseUrl = function(){
     return location.href;
