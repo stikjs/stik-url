@@ -1,19 +1,19 @@
 (function(){
-  function UrlState(){}
+  UrlState = {};
 
-  UrlState.prototype.$baseUrl = function(){
+  UrlState.$baseUrl = function(){
     return location.href;
   };
 
-  UrlState.prototype.$pathName = function(){
+  UrlState.$pathName = function(){
     return location.pathname;
   };
 
-  UrlState.prototype.$hash = function(newHashValue){
+  UrlState.$hash = function(newHashValue){
     return this.$locationHash(newHashValue).replace(/^#/, "");
   };
 
-  UrlState.prototype.$locationHash = function(newHashValue){
+  UrlState.$locationHash = function(newHashValue){
     if (newHashValue) {
       location.hash = newHashValue;
     }
@@ -21,11 +21,11 @@
     return location.hash;
   };
 
-  UrlState.prototype.$mainPath = function() {
+  UrlState.$mainPath = function() {
     return "/" + this.$pathName().split("/")[1];
   };
 
-  UrlState.prototype.$queries = function(){
+  UrlState.$queries = function(){
     var result, queries, query;
 
     queries = this.$baseUrl().split("?")[1];
