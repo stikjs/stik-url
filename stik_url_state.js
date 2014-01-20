@@ -45,8 +45,8 @@
   };
 
   window.stik.boundary({
-    as: "$urlState"
-    from: "controller|behavior"
+    as: "$urlState",
+    from: "controller|behavior",
     to: UrlState
   });
 })();
