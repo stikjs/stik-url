@@ -141,4 +141,20 @@ describe("Url", function(){
       ).toHaveBeenCalledWith("some-hash");
     });
   });
+
+  describe("goTo", function(){
+    it("should assign the location value", function(){
+      var windowMock = {}, helper;
+
+      url = stik.labs.boundary({
+        name: "$url"
+      }).run({
+        $window: windowMock
+      });
+
+      url.goTo("/heroes/hell-boy");
+
+      expect(windowMock.location).toEqual("/heroes/hell-boy");
+    });
+  });
 });

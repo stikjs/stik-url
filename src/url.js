@@ -3,28 +3,31 @@ window.stik.boundary({
   resolvable: true,
   to: function($window){
     return {
-      baseUrl: function(){
+      baseUrl: function baseUrl(){
         return $window.location.href;
       },
-      relativeUrl: function(){
+      relativeUrl: function relativeUrl(){
         return this.baseUrl.match(/http:\/\/.+?(\/.+$)/)[1];
       },
-      pathName: function(){
+      pathName: function pathName(){
         return $window.location.pathname;
       },
-      hash: function( newHashValue ){
+      hash: function hash( newHashValue ){
         return this.locationHash( newHashValue ).replace( /^#/, '' );
       },
-      locationHash: function( newHashValue ){
+      locationHash: function locationHash( newHashValue ){
         if ( newHashValue ) {
           $window.location.hash = newHashValue;
         }
         return location.hash;
       },
-      mainPath: function() {
+      mainPath: function mainPath() {
         return '/' + this.pathName().split( '/' )[ 1 ];
       },
-      queries: function(){
+      goTo: function goTo( url ){
+        $window.location = url;
+      },
+      queries: function queries(){
         var result, queries, query;
 
         queries = this.baseUrl().split( '?' )[ 1 ];
