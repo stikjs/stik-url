@@ -1,22 +1,27 @@
-#stik-url-state
+#stik-url
 
-##$urlState
-`$urlState` will help you answer questions about the current state of your url.
+##$url
+`$url` will help you interact with your url.
 
 ###Using it
 ```javascript
-stik.controller("YourCtrl", "YourAction", function($urlState){
+stik.controller("YourCtrl", "YourAction", function($url){
   // http://my-website.com?someKey=someValue
-  $urlState.$queries(); // {someKey: "someValue"}
+  $url.queries(); // { someKey: "someValue" }
 
   // http://my-website.com#users
-  $urlState.$hash(); // "users"
-  $urlState.$hash("products");
+  $url.hash(); // "users"
+  $url.hash("products");
   // http://my-website.com#products
 });
 ```
 
 Available methods:
 
-* $queries
-* $hash
+* baseUrl
+* relativeUrl
+* pathName
+* hash
+* locationHash
+* mainPath
+* queries
