@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/stikjs/stik-url",
   "dependencies": {
-    "stik.js": "1.x",
+    "stik-core.js": "1.x",
     "stik-helpers.js": "0.x"
   },
   "devDependencies": {

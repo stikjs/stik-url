@@ -10,7 +10,7 @@
 window.stik.boundary({
   as: '$url',
   resolvable: true,
-  to: function($window){
+  to: function( $window ){
     return {
       baseUrl: function baseUrl(){
         return $window.location.href;

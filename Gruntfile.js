@@ -15,7 +15,7 @@ module.exports = function(grunt){
     },
     jasmine: {
       src: [
-        'node_modules/stik.js/stik.js',
+        'node_modules/stik-core.js/stik-core.js',
         'node_modules/stik-labs.js/stik-labs.js',
         'node_modules/stik-helpers.js/stik-helpers.js'
       ].concat(srcFiles),
@@ -34,6 +34,9 @@ module.exports = function(grunt){
       }
     },
     uglify: {
+      options: {
+        mangle: false
+      },
       stik: {
         files: {
          "stik-url.min.js": ["stik-url.js"]
