@@ -5,7 +5,7 @@
 //            See https://github.com/stikjs/stik-url/blob/master/LICENSE
 // ==========================================================================
 
-// Version: 0.2.0 | From: 21-04-2014
+// Version: 0.2.1 | From: 21-04-2014
 
 window.stik.boundary({
   as: '$url',
