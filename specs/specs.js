@@ -140,6 +140,17 @@ describe("Url", function(){
         url.locationHash
       ).toHaveBeenCalledWith("some-hash");
     });
+
+    it("setting an empty hash", function(){
+      var url = stik.labs.boundary({
+        name: "$url"
+      }).run();
+
+      url.hash("some-hash");
+      url.hash("");
+
+      expect(url.hash()).toEqual("");
+    });
   });
 
   describe("goTo", function(){

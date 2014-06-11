@@ -1,6 +1,6 @@
 {
   "name": "stik-url.js",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Adds url related functionalities to Stik.js",
   "main": "stik-url.js",
   "scripts": {

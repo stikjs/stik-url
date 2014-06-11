@@ -5,7 +5,7 @@
 //            See https://github.com/stikjs/stik-url/blob/master/LICENSE
 // ==========================================================================
 
-// Version: 0.2.1 | From: 21-04-2014
+// Version: 0.2.2 | From: 11-06-2014
 
 window.stik.boundary({
   as: '$url',
@@ -25,7 +25,7 @@ window.stik.boundary({
         return this.locationHash( newHashValue ).replace( /^#/, '' );
       },
       locationHash: function locationHash( newHashValue ){
-        if ( newHashValue ) {
+        if ( newHashValue !== undefined ) {
           $window.location.hash = newHashValue;
         }
         return location.hash;
