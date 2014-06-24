@@ -15,6 +15,9 @@ window.stik.boundary({
       hash: function hash( newHashValue ){
         return this.locationHash( newHashValue ).replace( /^#/, '' );
       },
+      hashBang: function hashBang( newHashBangValue ){
+        return this.locationHash( "!" + newHashBangValue ).replace( /^#!/, '' );
+      },
       locationHash: function locationHash( newHashValue ){
         if ( newHashValue !== undefined ) {
           $window.location.hash = newHashValue;
