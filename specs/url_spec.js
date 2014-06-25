@@ -1,3 +1,14 @@
+var jsdom = require("jsdom").jsdom;
+GLOBAL.document = jsdom("<html><head></head><body></body></html>");
+GLOBAL.window = document.parentWindow;
+
+require("stik-core")
+require("stik-helpers")
+require("stik-labs")
+require("../src/url")
+
+var stik = window.stik;
+
 describe("Url", function(){
   describe("mainPath", function(){
     it("with a simple path", function(){

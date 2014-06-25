@@ -1,10 +1,10 @@
 {
-  "name": "stik-url.js",
+  "name": "stik-url",
   "version": "0.2.2",
   "description": "Adds url related functionalities to Stik.js",
-  "main": "stik-url.js",
+  "main": "dist/stik-url.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -23,15 +23,16 @@
   },
   "homepage": "https://github.com/stikjs/stik-url",
   "dependencies": {
-    "stik-core.js": "1.x",
-    "stik-helpers.js": "0.x"
+    "stik-core": "^1.0.3",
+    "stik-helpers": "^0.4.0"
   },
   "devDependencies": {
-    "stik-labs.js": "0.x",
-    "grunt": "~0.4.2",
-    "grunt-cli": "~0.1.11",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-jasmine": "~0.5.2"
+    "stik-labs": "0.x",
+    "gulp": "^3.8.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-header": "^1.0.2",
+    "gulp-jasmine": "^0.2.0",
+    "gulp-uglify": "^0.3.1",
+    "jsdom": "^0.11.0"
   }
 }
